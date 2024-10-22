@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media Queries </title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        .container {
+            height: 100vh ;
+            background-color: black;
+            color: white;
+            padding: 12px;
+            text-align: center;
+        }
+        @media (min-width:457px) {
+            .container{
+                background-color: red;
+            }
+        }
+
+        @media (min-width: 890px) {
+            .container{
+                background-color: blue;
+            }            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Main Heading </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vel provident officiis quos nisi magnam
+            officia? Quos dicta aliquam explicabo quibusdam laudantium eum numquam dolores delectus sint qui? Numquam,
+            laudantium.
+        </p>
+        <button> Learn More </button>
+    </div>
+</body>
+
+</html>

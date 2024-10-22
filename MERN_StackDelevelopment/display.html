@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .bg-container{
+            height: 100vh ;
+            background-color: black;
+            display: flex;
+            justify-content: start;
+        }
+        .box{
+            height: 250px;
+            width: 250px;
+            background-color: #fff;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+
+        .x-box{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;  
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-container" >
+        <div class="box">
+            <div class="x-box">
+                x
+            </div>
+        </div>
+    </div>        
+</body>
+</html>

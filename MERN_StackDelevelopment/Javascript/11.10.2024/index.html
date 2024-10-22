@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope - let, var </title>
+</head>
+
+<body>
+    <script>
+        var age = 18;
+        if (age >= 18) {
+            var teja_age = 25;
+            console.log("You are eligible to Vote!");
+            console.log("You are eligible to Vote!"); 
+            console.log("You are eligible to Vote!");
+            console.log("You are eligible to Vote!"); 
+            console.log("You are eligible to Vote!"); 
+            console.log("You are eligible to Vote!");
+        }
+        else {
+            console.log("Grow up kiddo");
+        }
+        const x = 10;
+        age = 15;
+        console.log(x)
+
+
+        
+        console.log(teja_age);
+    </script>
+</body>
+
+</html>

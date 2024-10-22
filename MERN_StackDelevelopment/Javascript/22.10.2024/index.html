@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title> Object </title>
+</head>
+<body>
+<script>
+    let electricBike = {
+        name: "Power",
+        brand : "P - Sport",
+        color : "White",
+        batteryCapacity: "4KW" 
+    };
+    // Acessing the Object
+    console.log(electricBike.brand);
+    // Updating the Object
+    electricBike.brand = "P-sport";
+    console.log(electricBike);
+
+    // Insering a New value into the Object
+    electricBike.range = "210 Kms per Charge";
+    console.log(electricBike)
+
+    // Delete 
+    delete electricBike.batteryCapacity;
+
+    console.log(electricBike)
+</script>
+</body>
+</html>

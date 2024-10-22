@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h1Ele"> Web Technologies </h1>
+    <button onclick="manipulateStyles()"> Change Heading </button>
+    <!-- 
+
+        background-color : "red";
+        color : "blue";
+    
+    -->
+    <script>
+
+        function manipulateStyles() {
+            var headingEle = document.getElementById("h1Ele");
+            headingEle.textContent = "4.0 Technologies";
+            headingEle.style.color = "blue";
+        }
+    </script>
+</body>
+
+</html>
