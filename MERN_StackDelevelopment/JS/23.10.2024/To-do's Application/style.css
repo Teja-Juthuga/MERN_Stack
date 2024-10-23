@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg-container{
+    font-family: "Prociono";
+    background-color: #8686AC;
+    height: 100vh;
+}
+.main-heading{
+    color: #0F0E47;
+    text-align: center; 
+    padding-top: 30px;
+}
+.input-box{
+    text-align: center;
+    padding: 30px;
+}
+.todo-input{
+    height: 48px;
+    border-radius: 8px;
+    border: 0;
+    width: 350px;
+    background-color: #505081;
+    font-family: "Prociono";
+    font-size: large; 
+}
+.todo-add-btn{
+    border: 0;
+    height: 45px;
+    border-radius: 8px;
+    width: 55px;
+    margin-left: 8px;
+    color: grey;
+    font-family: "Prociono";
+    background-color: #272757;
+}
