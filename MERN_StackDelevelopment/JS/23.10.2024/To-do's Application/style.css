@@ -36,3 +36,41 @@
     font-family: "Prociono";
     background-color: #272757;
 }
+#main-todos-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items:center;
+}
+
+.todo-card{
+    height: 30px;
+    width: 450px;
+    background-color: #505081;
+    border-radius: 8px;
+    margin-top: 18px;
+    padding: 12px;
+    display: flex;
+}
+
+.todo-checkbox{
+    height: 20px;
+    width: 20px;   
+}
+
+.todo-task{
+    color: #0F0E47;
+    font-weight: 800;
+    margin-left: 12px;
+}
+
+.to-do-modification-features{
+    display: flex;
+    width: 250px;
+    justify-content: end;
+    color: #0F0E47;
+}
+
+.to-do-modification-features p {
+    margin-left: 8px;
+}
