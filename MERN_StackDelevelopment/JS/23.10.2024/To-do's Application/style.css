@@ -51,6 +51,7 @@
     margin-top: 18px;
     padding: 12px;
     display: flex;
+    align-items: center;
 }
 
 .todo-checkbox{
@@ -71,6 +72,6 @@
     color: #0F0E47;
 }
 
-.to-do-modification-features p {
-    margin-left: 8px;
+.to-do-modification-features i {
+    margin-left: 25px;
 }
