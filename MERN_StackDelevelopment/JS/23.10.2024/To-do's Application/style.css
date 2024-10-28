@@ -25,6 +25,7 @@
     background-color: #505081;
     font-family: "Prociono";
     font-size: large; 
+    padding: 8px;
 }
 .todo-add-btn{
     border: 0;

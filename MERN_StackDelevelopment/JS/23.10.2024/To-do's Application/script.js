@@ -13,6 +13,7 @@ let tasks = [
     },
 ];
 
+let mainTodosContainer = document.getElementById("main-todos-container");
 
 function createTasks(eachTask) {
     let divEle = document.createElement("div");
@@ -43,8 +44,10 @@ function createTasks(eachTask) {
     mainTodosContainer.appendChild(divEle);
 }
 
-let mainTodosContainer = document.getElementById("main-todos-container");
-
+function addTask(){
+    let task = document.getElementById("todo-task");
+    console.log(task.value);    
+}
 
 for (let task of tasks) {
     createTasks(task)
