@@ -76,3 +76,6 @@
 .to-do-modification-features i {
     margin-left: 25px;
 }
+.status-change{
+    text-decoration: line-through;
+}
