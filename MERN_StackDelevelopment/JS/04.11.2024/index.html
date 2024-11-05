@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Local Storage </title>
+</head>
+
+<body>
+    <textarea id="input-el" rows="10" cols="50"></textarea>
+    <br />
+    <button id="save-btn"> Save </button>
+    <p id="status"></p>
+    <h1 id="output"></h1>
+
+
+    <script>
+        let inputEle = document.getElementById("input-el");
+        let saveBtnEl = document.getElementById("save-btn");
+        let statusEl = document.getElementById("status");
+        let outputEl = document.getElementById("output");
+
+        function getInfo() {
+            let info = localStorage.getItem("x");
+            outputEl.innerText = info;
+        }
+
+        saveBtnEl.onclick = function () {
+            if (inputEle.value === "") {
+                alert("Please Enter Valid Input!!");
+                return;
+            }
+            
+            let info = inputEle.value;
+            localStorage.setItem("x", info);
+            inputEle.value = "";
+            statusEl.innerText = "Saved!";
+            getInfo();
+        }
+
+        getInfo()
+
+    </script>
+</body>
+
+</html>

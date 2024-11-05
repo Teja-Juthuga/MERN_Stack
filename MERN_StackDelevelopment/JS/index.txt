@@ -1,2 +1,33 @@
 28.10.2024
     -> Array Methods
+
+30.10.2024
+    -> input element  
+        - Check boxes
+        - Label
+
+31.10.2024
+    -> Diwali Holiday
+
+01.11.2024
+    -> Akbar Gas Problem - No Class
+
+02.11.2024
+    -> Function
+    -> Arrow Functions
+    -> Revised todo application code
+
+03.11.2024
+    -> How to read value from user input
+    -> Storage Mechanism
+        -> Client Side Storage Mechanism
+            -> Local Storage 
+                => localStorage.setItem(key,value);
+                => localStorage.getItem(key);
+
+04.11.2024
+    A Small project on localStorage - get and set Methods
+
+05.11.2024
+    - JSON -> Javascript Object Notation
+    

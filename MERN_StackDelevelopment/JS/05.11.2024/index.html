@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON </title>
+</head>
+
+<body>
+    <script>
+        let studentDetails =
+        {
+            "name": "Akbar",
+            "age": 25,
+            "gender": "Male",
+            "town": "Kakinada"
+        }
+
+        console.log(typeof (studentDetails)); // Object
+        console.log(studentDetails);
+
+        let stringifiedData = JSON.stringify(studentDetails);
+        console.log(typeof stringifiedData); // String
+        console.log(stringifiedData);
+
+        let parsedData = JSON.parse(stringifiedData);
+        console.log(parsedData);
+
+        let myArray = [5, "six", 2, 8.2];
+        myArray.splice(2, 1);
+
+        console.log(myArray);  // [5, "six"]
+
+        let deletedItems = myArray.splice(2, 2);
+
+        console.log(deletedItems);  // [2, 8.2]
+
+        let myArray1 = [5, "six", 2, 8.2];
+        myArray1.splice(3, 1, "one", false);
+
+        console.log(myArray1);  // [5, "six", "one", false, 2, 8.2]
+
+        console.log(myArray1.indexOf(55));
+    </script>
+</body>
+
+</html>

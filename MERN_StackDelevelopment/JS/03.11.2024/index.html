@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Local Storage </title>
+</head>
+<body>
+    <script>
+        localStorage.setItem("name" , "Teja");
+        localStorage.setItem("age", "25")
+        localStorage.setItem("gender", "Male");
+
+        let name = localStorage.getItem("name");
+        let age = localStorage.getItem("age");
+
+        console.log(name);
+        console.log(age);
+    </script>
+</body>
+</html>

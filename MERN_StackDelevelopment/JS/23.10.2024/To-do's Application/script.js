@@ -14,6 +14,7 @@ let tasks = [
 ];
 
 let mainTodosContainer = document.getElementById("main-todos-container");
+let tasksCount = tasks.length
 
 function onClickStatusChange(labelId, checkboxId){
     let labelEle =  document.getElementById(labelId);
@@ -72,7 +73,18 @@ function createTasks(eachTask) {
 
 function addTask(){
     let task = document.getElementById("todo-task");
-    console.log(task.value);
+    
+    if (task.value === ""){
+        alert("Please Enter Valid Input!");
+    }
+    else {
+        let newTask = {
+            id: tasksCount + 1,
+            task: task.value,
+        }
+        createTasks(newTask)
+        task.value = ""
+    }
 }
 
 for (let task of tasks) {
