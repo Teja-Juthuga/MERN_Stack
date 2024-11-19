@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data </title>
+</head>
+<body>
+    <div>
+        <h1> Student Details </h1>
+        <div>
+            <label for="studentName"> Name : </label>
+            <input type="text" id="studentName"/>
+        </div>
+        <div>
+            <label for="DOB"> Date of Birth :  </label>
+            <input type="date" id="DOB" name="DOB"/>
+        </div>
+        <div>
+            <label for="studentAge"> Age : </label>
+            <input type="number" id="studentAge"/>
+        </div>
+        <div>
+            <input type="radio" id="male" value="male" name="gender"/>
+            <label for="male"> Male </label>
+            <input type="radio" id="female" value="female" name="gender"/>
+            <label for="female"> Female </label>
+            <input type="radio" id="other" value="other" name="gender"/>
+            <label for="other"> Other </label>
+        </div>
+        <select name="Mother Language" id="language">
+            <option> --- Choose Mother Language --- </option>
+            <option> Telugu </option>
+            <option> Hindi </option>
+            <option> English </option>
+            <option> Bengali </option>
+        </select>
+        <div>
+            Hobbies: 
+            <input type="checkbox" id="playingCricket" name="Hobbies"/>
+            <label for="playingCricket"> Playing Cricket</label>
+            <input type="checkbox" id="readingBooks" name="Hobbies"/>
+            <label for="readingBooks"> Reading Books</label>
+            <input type="checkbox" id="listeningMusic" name="Hobbies"/>
+            <label for="listeningMusic"> Listening Music</label>
+            <input type="checkbox" id="hiking" name="Hobbies"/>
+            <label for="hiking"> Hiking </label>
+        </div>
+        <div>
+            <label for="mobile"> Contact Number :  </label>
+            <input type="text" id="mobile" name="contact"/>
+        </div>
+        <div>
+            <input type="email" name="email" placeholder="Enter E-mail Id"/>
+        </div>
+        <input type="submit" value="Register" onclick="studentdata()"/>
+    </div>
+    <script>
+       
+        function studentdata(){
+            let studentEl = document.getElementById("studentName");
+            console.log( "    student name is " + studentEl.value) ;
+        }
+        
+    </script>
+
+
+</body>
+</html>
