@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hobbies Checkbox</title>
+</head>
+<body>
+    <h2>Select your hobbies:</h2>
+
+    
+    <label>
+        <input type="checkbox" name="hobbies" value="reading" id="reading"> Reading books, novels, news paper
+    </label><br>
+
+    <label>
+        <input type="checkbox" name="hobbies" value="music"> Listening to Music
+    </label><br>
+
+    <label>
+        <input type="checkbox" name="hobbies" value="sports"> Playing Sports
+    </label><br>
+
+    <button onclick="getHobbies()">Submit</button>
+
+    <script>
+        // function getHobbies() {
+        //     const checkboxes = document.querySelectorAll('input[name="hobbies"]:checked');
+
+        //     console.log(checkboxes.value);
+
+        //     const selectedHobbies = Array.from(checkboxes).map(checkbox => checkbox.value);
+
+        //     alert("Selected hobbies: " + selectedHobbies.join(", "));
+        // }
+
+        let hobbies = [];
+
+        function getHobbies(){
+            let hobby = document.getElementById("reading");
+            console.log(hobby.value);
+            console.log(hobby.checked);
+            if (hobby.checked){
+                hobbies.push(hobby.value);
+            }else {
+                let index = hobbies.indexOf(hobby.value);
+                if (index > -1){
+                    hobbies.splice(index, 1);
+                }
+            }
+            
+        }
+
+        console.log(hobbies);
+
+    </script>
+</body>
+</html>
