@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Data </title>
 </head>
+
 <body>
     <div>
         <h1> Student Details </h1>
         <div>
             <label for="studentName"> Name : </label>
-            <input type="text" id="studentName"/>
+            <input type="text" id="studentName" />
         </div>
         <div>
-            <label for="DOB"> Date of Birth :  </label>
-            <input type="date" id="DOB" name="DOB"/>
+            <label for="DOB"> Date of Birth : </label>
+            <input type="date" id="DOB" name="DOB" />
         </div>
         <div>
             <label for="studentAge"> Age : </label>
-            <input type="number" id="studentAge"/>
+            <input type="number" id="studentAge" />
         </div>
         <div>
-            <input type="radio" id="male" value="male" name="gender"/>
+            <input type="radio" id="male" value="male" name="gender" />
             <label for="male"> Male </label>
-            <input type="radio" id="female" value="female" name="gender"/>
+            <input type="radio" id="female" value="female" name="gender" />
             <label for="female"> Female </label>
-            <input type="radio" id="other" value="other" name="gender"/>
+            <input type="radio" id="other" value="other" name="gender" />
             <label for="other"> Other </label>
         </div>
         <select name="Mother Language" id="language">
@@ -36,34 +38,55 @@
             <option> Bengali </option>
         </select>
         <div>
-            Hobbies: 
-            <input type="checkbox" id="playingCricket" name="Hobbies"/>
-            <label for="playingCricket"> Playing Cricket</label>
-            <input type="checkbox" id="readingBooks" name="Hobbies"/>
-            <label for="readingBooks"> Reading Books</label>
-            <input type="checkbox" id="listeningMusic" name="Hobbies"/>
-            <label for="listeningMusic"> Listening Music</label>
-            <input type="checkbox" id="hiking" name="Hobbies"/>
-            <label for="hiking"> Hiking </label>
+            Hobbies: <br>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="reading" id="reading"> Reading books, novels, news paper
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="music" id="music"> Listening to Music
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="sports" id="sports"> Playing Sports
+            </label><br>
         </div>
         <div>
-            <label for="mobile"> Contact Number :  </label>
-            <input type="text" id="mobile" name="contact"/>
+            <label for="mobile"> Contact Number : </label>
+            <input type="text" id="mobile" name="contact" />
         </div>
         <div>
-            <input type="email" name="email" placeholder="Enter E-mail Id"/>
+            <input type="email" name="email" placeholder="Enter E-mail Id" />
         </div>
-        <input type="submit" value="Register" onclick="studentdata()"/>
+        <input type="submit" value="Register" onclick="studentdata()" />
     </div>
     <script>
-       
-        function studentdata(){
+
+        let data = {};
+
+        function studentdata() {
             let studentEl = document.getElementById("studentName");
-            console.log( "student name is " + studentEl.value) ;
+            data.studentName = studentEl.value;
+            data.studentHobbies = getHobbies();
+            console.log(data);
         }
-        
+
+        function getHobbies() {
+            const checkboxes = document.querySelectorAll('input[name="hobbies"]:checked');
+
+            let x = Array.from(checkboxes)
+
+            selectedHobbies = x.map((y) => y.value)
+
+            // console.log(selectedHobbies)
+            return selectedHobbies
+
+        }
+
     </script>
 
 
 </body>
+
 </html>
