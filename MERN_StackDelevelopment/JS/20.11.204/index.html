@@ -12,32 +12,36 @@
     </label><br>
 
     <label>
-        <input type="checkbox" name="hobbies" value="music"> Listening to Music
+        <input type="checkbox" name="hobbies" value="music" id="music"> Listening to Music
     </label><br>
 
     <label>
-        <input type="checkbox" name="hobbies" value="sports"> Playing Sports
+        <input type="checkbox" name="hobbies" value="sports" id="sports"> Playing Sports
     </label><br>
 
     <button onclick="getHobbies()">Submit</button>
 
     <script>
-        // function getHobbies() {
-        //     const checkboxes = document.querySelectorAll('input[name="hobbies"]:checked');
+        function getHobbies() {
+            const checkboxes = document.querySelectorAll('input[name="hobbies"]:checked');
 
-        //     console.log(checkboxes.value);
+            let x = Array.from(checkboxes)
 
-        //     const selectedHobbies = Array.from(checkboxes).map(checkbox => checkbox.value);
+            selectedHobbies = x.map((y) => y.value)
 
-        //     alert("Selected hobbies: " + selectedHobbies.join(", "));
-        // }
+            console.log(selectedHobbies)
 
+            // const selectedHobbies = Array.from(checkboxes).map(checkbox => checkbox.value);
+
+            // alert("Selected hobbies: " + selectedHobbies.join(", "));
+        }
+
+        /*
         let hobbies = [];
 
         function getHobbies(){
             let hobby = document.getElementById("reading");
-            console.log(hobby.value);
-            console.log(hobby.checked);
+            
             if (hobby.checked){
                 hobbies.push(hobby.value);
             }else {
@@ -46,11 +50,9 @@
                     hobbies.splice(index, 1);
                 }
             }
-            
         }
 
-        console.log(hobbies);
-
+        */
     </script>
 </body>
 </html>
